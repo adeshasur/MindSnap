@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MindSnap ⚡</h1>
+      <span class="badge">PRO</span>
+    </header>
+
+    <div class="glass-panel">
+      <textarea id="inputText" placeholder="Paste text here to summarize or generate MCQs..."></textarea>
+      
+      <div class="action-buttons">
+        <button id="btnSummarize" class="btn primary">Summarize</button>
+        <button id="btnMCQ" class="btn secondary">Create MCQs</button>
+      </div>
+    </div>
+
+    <div class="glass-panel result-panel">
+      <h3>AI Response:</h3>
+      <div id="resultBox" class="result-box">Waiting for input...</div>
+    </div>
+    
+    <div class="settings">
+      <input type="password" id="apiKey" placeholder="Enter Gemini API Key here...">
+      <button id="saveKey">Save Key</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
